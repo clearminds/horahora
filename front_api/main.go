@@ -23,6 +23,9 @@ func main() {
 	grpcAuth := custommiddleware.NewGRPCAuth(cfg)
 	e.Use(grpcAuth.GRPCAuth)
 
+	respCache := custommiddleware.NewRespCache()
+	e.Use(respCache.RespCache)
+
 	routes.SetupRoutes(e, cfg)
 
 	e.Logger.Fatal(e.Start(":8083"))

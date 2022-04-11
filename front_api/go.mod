@@ -3,11 +3,14 @@ module github.com/horahoradev/horahora/front_api
 go 1.16
 
 require (
+	github.com/SporkHubr/echo-http-cache v0.0.0-20200706100054-1d7ae9f38029 // indirect
 	github.com/caarlos0/env v3.5.0+incompatible
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
 	github.com/horahoradev/horahora/scheduler v0.0.0-20211017173402-4c622fa72287
 	github.com/horahoradev/horahora/user_service v0.0.0-20210923020008-dacaa1a9536b
 	github.com/horahoradev/horahora/video_service v0.0.0-20210923020008-dacaa1a9536b
+	github.com/jellydator/ttlcache/v2 v2.11.1
+	github.com/jellydator/ttlcache/v3 v3.0.0 // indirect
 	github.com/labstack/echo/v4 v4.6.1
 	github.com/labstack/gommon v0.3.0
 	google.golang.org/grpc v1.39.0
